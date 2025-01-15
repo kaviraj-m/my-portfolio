@@ -37,6 +37,7 @@ const skills = [
       { name: "HTML5", icon: <SiHtml5 color="#E44D26" /> },
       { name: "CSS3", icon: <SiCss3 color="#1572B6" /> },
       { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
+      { name: "Three.js", icon: <FaReact color="#000000" style={{ fontSize: "2rem" }} /> },
     ],
   },
   {

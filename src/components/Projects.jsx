@@ -12,8 +12,8 @@ import nodueImage from '../assets/nodue.png';
 const Container = styled.div`
   width: 100%;
   min-height: 100vh;
-  position: relative; /* Required for Vanta effect */
-  overflow: hidden; /* Ensure Vanta doesn't overflow */
+  position: relative; 
+  overflow: hidden; 
   display: flex;
   justify-content: center;
   align-items: center;
