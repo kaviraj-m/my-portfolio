@@ -9,11 +9,21 @@ import Contact from '../components/Contact';
 const Home = () => {
   return (
     <Box>
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Box id="home">
+        <Hero />
+      </Box>
+      <Box id="about">
+        <About />
+      </Box>
+      <Box id="skills">
+        <Skills />
+      </Box>
+      <Box id="projects">
+        <Projects />
+      </Box>
+      <Box id="contact">
+        <Contact />
+      </Box>
     </Box>
   );
 };
