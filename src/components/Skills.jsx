@@ -25,7 +25,7 @@ import {
   SiCanva,
   SiMysql,
 } from "react-icons/si";
-
+import GoIcon from '../assets/go.png';
 const skills = [
   {
     category: "Frontend",
@@ -50,6 +50,10 @@ const skills = [
       { name: "Sequelize", icon: <SiSequelize color="#52B0E7" /> },
       { name: "SQL", icon: <SiMysql color="#4479A1" /> },
       { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
+      {
+        name: "Go (Golang)",
+        icon: <img src={GoIcon} alt="Go" style={{ width: '2.5rem', height: '2.5rem' }} />,
+      },
     ],
   },
   {
