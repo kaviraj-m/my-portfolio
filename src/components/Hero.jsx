@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Box, Typography, Button, Avatar, useTheme } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import LinkedInIcon from "@mui/icons-material/LinkedIn"; 
 import profileImage from "../assets/profile.jpg";
 import { motion } from "framer-motion";
 import * as THREE from "three";
@@ -15,6 +16,10 @@ const Hero = () => {
       "https://wa.me/+917904612266?text=Hi%20Kaviraj,%20I%20saw%20your%20portfolio!",
       "_blank"
     );
+  };
+
+  const handleLinkedInRedirect = () => {
+    window.open("https://www.linkedin.com/in/kaviraj-m", "_blank");
   };
 
   useEffect(() => {
@@ -109,14 +114,14 @@ const Hero = () => {
           }}
         >
           Hi, I'm{" "}
-  <Box
-    component="span"
-    sx={{
-      color: "#1976d2", 
-    }}
-  >
-    Kaviraj Mani
-  </Box>
+          <Box
+            component="span"
+            sx={{
+              color: "#1976d2", 
+            }}
+          >
+            Kaviraj Mani
+          </Box>
         </Typography>
       </motion.div>
 
@@ -205,6 +210,36 @@ const Hero = () => {
             Chat on WhatsApp
           </Button>
         </motion.div>
+
+        {/* LinkedIn Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1.1 }}
+        >
+          <Button
+            variant="contained"
+            color="primary"
+            startIcon={<LinkedInIcon />}
+            onClick={handleLinkedInRedirect}
+            sx={{
+              textTransform: "capitalize",
+              fontWeight: 600,
+              padding: "0.8rem 2rem",
+              borderRadius: "50px",
+              fontSize: "1.1rem",
+              backgroundColor: "#0077B5",
+              color: "#ffffff",
+              boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.1)",
+              "&:hover": {
+                backgroundColor: "#005C8B",
+                boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)",
+              },
+            }}
+          >
+            Connect on LinkedIn
+          </Button>
+        </motion.div>
       </Box>
 
       <motion.div
@@ -218,11 +253,13 @@ const Hero = () => {
             sx={{
               color: "#f5f5f5",
               lineHeight: "1.6",
-              fontSize: "1rem",
-              maxWidth: "600px",
+              fontSize: { xs: "0", sm: "1rem" }, 
+              visibility: "visible",
+              display: { xs: "none", sm: "block" }, 
+              maxWidth: "100%",
               margin: "auto",
-              textShadow: "2px 2px 5px rgba(0, 0, 0, 0.55)",
-            }}
+              textShadow: "2px 2px 5px rgba(0, 0, 0, 0.7)",
+             }}
           >
             I specialize in modern frameworks to create responsive, efficient
             web and mobile applications. Let’s collaborate to turn ideas into

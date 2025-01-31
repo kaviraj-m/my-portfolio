@@ -8,7 +8,7 @@ import * as THREE from 'three';
 import kavuchiImage from '../assets/kavuchi.jpg';
 import shreecoirsImage from '../assets/shreecoirs.png';
 import nodueImage from '../assets/nodue.png';
-
+import computerCommunityImage from '../assets/computerCommunityImage.png';
 const Container = styled.div`
   width: 100%;
   min-height: 100vh;
@@ -43,6 +43,14 @@ const projects = [
     liveDemo: '',
     repo: 'https://github.com/kaviraj-m/nodue.git',
   },
+  {
+    title: 'The Computer Community - Custom PC Builder Website (Ongoing)',
+    description: 'A static website for a custom PC building community, offering both custom PC building services and pre-built PC showcases. Developed to provide seamless customization and an intuitive user experience.',
+    image: computerCommunityImage,
+    liveDemo: 'https://cc.kaviraj.online',
+    repo: '',
+  },
+  
 ];
 
 const Projects = () => {
